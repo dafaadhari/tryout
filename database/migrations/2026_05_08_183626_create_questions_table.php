@@ -21,7 +21,7 @@ return new class extends Migration
             $table->text('opt_c');
             $table->text('opt_d');
             $table->text('opt_e');
-            $table->string('correct_answer', 1); // A, B, C, D, atau E
+            $table->string('correct_answer', 1)->nullable(); // A, B, C, D, atau E
             $table->longText('discussion_text')->nullable(); // Pembahasan
             $table->json('tkp_scores')->nullable(); // Bobot nilai TKP format JSON
             $table->timestamps();
